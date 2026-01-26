@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/login.css">
+
+    <title>Connexion</title>
+</head>
+
+<body>
+
+    <main>
+        <a class="no_account" href="./create_account.html">Pas encore de compte ?</a><br>
+
+        <!-- Formulaire de connexion -->
+        <div class="form-container box" id="connexionForm">
+            <form id="connexion">
+                <div id=message> </div>
+                <label for="email">Email</label>
+                <input class="textfield" type="email" id="email" name="email" required><br>
+
+                <label for="password">Mot de passe</label>
+                <input class="textfield" type="password" id="password" name="password" required>
+
+                <button type="submit">Se connecter</button>
+            </form>
+        </div>
+
+    </main>
+</body>
+
+<script src="../scripts/login.js"></script>
+
+</html>

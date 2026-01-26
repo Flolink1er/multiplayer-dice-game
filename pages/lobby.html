@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lobby</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/chatbox.css">
+    <link rel="stylesheet" href="../styles/lobby.css">
+
+    <script src="../scripts/header.js"></script>
+
+</head>
+
+<body>
+
+    <main>
+        <a id="leave_game">&#8678; Quitter la partie</a>
+
+        <div id="lobby">
+            <h1 id="party_id">Game ID : </h1>
+
+            <div class="title">
+                <h1 id="player_count"></h1>
+            </div>
+
+            <table id="player_list">
+                <thead>
+                    <th>Joueurs</th>
+                    <th>Statut</th>
+                </thead>
+                <tr id="player_1" class="player notset">
+
+                </tr>
+                <tr id="player_2" class="player notset">
+
+                </tr>
+                <tr id="player_3" class="player notset">
+
+                </tr>
+                <tr id="player_4" class="player notset">
+
+                </tr>
+                <tr id="player_5" class="player notset">
+
+                </tr>
+                <tr id="player_6" class="player notset">
+
+                </tr>
+            </table>
+
+            <div class="button_box">
+                <button id="ready_status" title="Change votre status en 'prêt' ou 'pas prêt'">Prêt</button>
+                <button id="launch" disabled title="N'est possible que lorsque tous le monde est prêt">Lancer</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="chat_container">
+        <div id="chat_box">
+
+        </div>
+
+        <form id="send_msg">
+            <input type="text" placeholder="Écrivez un message" name="msg" id="msg">
+        </form>
+    </div>
+
+</body>
+
+<script src="../scripts/lobby.js"></script>
+<script src="../scripts/chatbox.js"></script>
+
+
+
+</html>

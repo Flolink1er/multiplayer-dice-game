@@ -1,0 +1,85 @@
+#chat_container{
+    position: fixed;
+    top: 60px;
+    right: 0;
+    margin: 10px;
+    padding: 10px;
+    height: 85vh;
+    width: 32vw;
+    background-color: var(--black_box);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#chat_box{
+    height: 98%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+#send_msg{
+    position: relative;
+    left:0;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#send_msg input{
+    width: 100%;
+    background-color: var(--type_field);
+    border-radius: 5px;
+    height: 100%;
+    color: white;
+    border: none;
+}
+
+#send_msg input::placeholder{
+    color: rgb(201, 201, 201);
+}
+
+.msg_box{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 80%;
+
+}
+
+.player_name {
+    width: 100%;
+    color: var(--green_color);
+    font-weight: 800;
+    font-size: larger;
+    padding: 10px;
+}
+
+.message{
+    color: white;
+    font-size: small;
+    overflow-wrap: anywhere;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: initial;
+}
+
+.your_msg{
+    color: var(--blue_color);
+}
+
+#chat_box{ 
+    color: white;
+}
+
+
+/*#chat_box > div:nth-of-type(2n){
+    background-color: var(--background_color);
+}*/

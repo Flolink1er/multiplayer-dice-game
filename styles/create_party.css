@@ -1,0 +1,46 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+main > a{
+    color: var(--green_color);
+    text-decoration: underline;
+    font-size: 1.7em;
+    position: fixed;
+    top: 10%;
+    left: 10px;
+}
+
+main > div{
+    background-color: var(--black_box);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+input[type="number"]{
+    width: 10%;
+}
+
+input[type="submit"]{
+    margin-top: 20px;
+    background-color: var(--green_color);
+    color: white;
+    border-radius: 10px;
+    width: 25%;
+    height: 30px;
+}
+
+input[type="submit"]:hover{
+    background-color: var(--greendark_color);
+    cursor: pointer;
+}

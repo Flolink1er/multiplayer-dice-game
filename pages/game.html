@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/chatbox.css">
+    <link rel="stylesheet" href="../styles/game.css">
+
+
+
+</head>
+
+<body>
+    <!--<script src="../scripts/header.js"></script>-->
+
+    <main>
+        <div id="top">
+            <div id="msg_status">
+                <h1 id="turn_status"></h1>
+
+                <h2 id="last_event"></h2>
+            </div>
+
+
+            <table id="lobby_table">
+                <thead>
+                    <th>Joueurs</th>
+                    <th>Dés</th>
+                </thead>
+
+                <tr id="player_1" class="player notset">
+                </tr>
+                <tr id="player_2" class="player notset">
+                </tr>
+                <tr id="player_3" class="player notset">
+                </tr>
+                <tr id="player_4" class="player notset">
+                </tr>
+                <tr id="player_5" class="player notset">
+                </tr>
+                <tr id="player_6" class="player notset">
+                </tr>
+            </table>
+        </div>
+
+        <h1 id="current_guess"></h1>
+
+        <div id="your_dices">
+            <h1>Vos dés :</h1>
+        </div>
+
+        <div id="message"></div>
+
+        <div id="guess_box">
+            <form id="guess_maker">
+                <label for="nb_dice">Faites un pari :</label>
+                <input type="number" name="nb_dice" min="1" id="nb_dice">
+
+                <img src="../dice-assets/dice_random.png" alt="Dice">
+                <label for="dice_digit"> de </label>
+                <input type="number" id="dice_digit" name="dice_digit" min="1" max="6">
+
+                <input type="submit" id="submit_guess" value="Parier">
+                OU
+                <input type="button" id="submit_liar" value="Menteur !">
+            </form>
+        </div>
+
+        <div id="rollie">
+            <p>Besoin d'aide ?</p>
+        </div>
+
+    </main>
+
+    <div id="chat_container">
+        <div id="chat_box">
+
+        </div>
+
+        <form id="send_msg">
+            <input type="text" placeholder="Écrivez un message" name="msg" id="msg">
+        </form>
+    </div>
+
+    <div id="rules">
+        <span id="close_rules">&#9746;</span>
+        <div id="rules_header">
+            <h1>Comment jouer ?</h1><br>
+            <h3>But :</h3>
+            <p>
+                Être le dernier joueur avec au moins un dé restant
+            </p>
+
+            <h3>Comment ?</h3><br>
+            <p>Au début du jeu, chaque joueur possède 5 dés dont les valeurs sont tirées aléatoirement</p><br>
+        </div>
+
+        <h3>À votre tour &#10174; 2 choix :</h3>
+        <ul>
+            <li>
+                <h5>Faire un pari :</h5>
+                <p>
+                    Faites un pari sur le nombre minimum de dés ayant la valeur de votre choix parmi les dés de tous
+                    les
+                    joueurs.
+                    Pour cela, remplissez les deux champs, ensuite appuyez sur 'Parier'.<br>
+                    Le premier champ concerne le nombre de dés pariés ; le second concerne la valeur de ces dés.<br><br>
+
+                    Si aucun pari n'a déjà été lancé, vous avez la liberté de parier ce que vous voulez.
+                    Autrement, vous devez faire un pari plus risqué. Vous pouvez choisir de parier sur un nombre
+                    minimal
+                    de dés plus élevé, ou de parier sur une valeur supérieure (avec le nombre minimal de dés que
+                    vous
+                    souhaitez).<br>
+
+                    Il n'est pas autorisé de parier sur une valeur inférieure à celle du pari déjà en cours ou de
+                    faire
+                    exactement le même pari. Vous pouvez en revanche parier un nombre de dé inférieur d'une valeur
+                    strictement supérieure.
+                </p>
+            </li>
+
+            <li>
+                <h5>Accuser le joueur précédent :</h5>
+                <p>
+                    Vous pouvez accuser le joueur précédent de 'mentir' via le bouton rouge du même nom.
+                    En faisant cela vous mettez fin à la manche en cours,
+                    le système vérifie si le pari est gagnant ou pas.<br><br>
+                    En cas de pari gagnant, vous qui avez accusé à tort, perdez un dé.<br>
+                    En cas de pari perdant, le joueur l'ayant lancé perd un dé.<br><br>
+                    Si le joueur perd son dernier dé, il est éliminé de la partie et ne peux plus que la regarder se
+                    dérouler.<br>
+                    Tous les dés restant sont ensuite à niveau tirés au sort et c'est au joueur ayant perdu un dé
+                    ou, en
+                    cas
+                    d'élimination, le joueur censé jouer après qui commence la prochaine manche avec un nouveau
+                    pari.
+                </p>
+            </li>
+        </ul>
+
+        <h4>Cas particulier :</h4><br>
+        <p>
+            S'il ne reste que 2 joueurs ayant chacun 1 seul dé, le mode duel s'active:<br>
+            Chacun à leur tour, les deux joueurs vont devoir parier sur la somme des deux seuls dés restant.<br>
+            Le joueur qui s'en rapproche le plus gagne. En cas d'égalité, ils refont un pari sur la même somme.
+        </p>
+
+    </div>
+
+
+</body>
+
+
+<script src="../scripts/chatbox.js"></script>
+<script src="../scripts/game.js"></script>
+
+
+
+
+</html>

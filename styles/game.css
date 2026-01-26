@@ -1,0 +1,339 @@
+main{
+    position: absolute;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 10px;
+    width: 69vw;
+    color: white;
+    padding-left : 10px;
+}
+
+#lobby_table td{
+    width: 50%;
+    text-align: center;
+}
+
+#lobby_table td:nth-of-type(2n+1){
+    border-right: 1px solid white;
+}
+
+#lobby_table td:nth-of-type(2n){
+    border-left: 1px solid white;
+}
+
+#lobby_table tr{
+    border-top: 1px solid white;
+}
+
+#your_dices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#your_dices > img {
+    margin: 20px;
+    width: 50px;
+    height: auto;
+}
+
+#turn_status{
+    width:100%;
+    padding: 20px;
+}
+
+#last_event{
+    width: 100%;
+    padding: 20px;
+    font-size: medium;
+    color: var(--blue_color);
+}
+
+#msg_status{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#lobby_table{
+    border-collapse: collapse;
+    color: white;
+    width: 45%;
+    background-color: var(--black_box);
+    border-radius: 5px;
+}
+
+.player_dices{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.player_dices img{
+    height: 20px;
+    width: auto;
+}
+
+#top{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding: 10px;
+    height: 30vh;
+    width : 100%;
+}
+
+#guess_box{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.no-hp{
+    filter: brightness(50%);
+}
+
+input[type=submit], input[type=button]{
+    width: 120px !important; 
+    height: 50px !important;
+    font-size: larger;
+    color: white;
+    border-radius: 10px;
+    border-style: none; 
+}
+
+input[type=submit]:hover, input[type=button]:hover{
+    filter: brightness(60%);
+    cursor: pointer;
+}
+
+#guess_maker{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-size: larger;
+}
+
+#guess_maker label{
+    text-align: center;
+}
+
+#guess_maker img{
+    width: 70px;
+    height: auto;
+    margin: 20px;
+}
+
+#guess_maker input{
+    width: 40px;
+    height: 30px;
+    margin: 20px;
+}
+
+input:disabled{
+    background-color: var(--type_field) !important;
+}
+
+#guess_maker input[type=number]{
+    font-size: 1.2em;
+    width: 45px;
+}
+
+#submit_guess{
+    background-color: var(--green_color);
+}
+
+#submit_liar{
+    background-color: crimson;
+}
+
+#rollie{
+    background-image: url("../dice-assets/rollie-chill.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    width: 7vw;
+    height: 7vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#rollie p{
+    position: relative;
+    text-wrap-mode:nowrap;
+    bottom: -90px;
+}
+
+#rollie:hover{
+    background-image: url("../dice-assets/rollie.png");
+    cursor: pointer;
+}
+
+.user_turn{
+    color: var(--blue_color);
+}
+
+.you{
+    color: var(--green_color);
+    text-decoration: underline;
+}
+
+#message{
+    color: crimson;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#chat_container{
+    top: 10px !important;
+}
+
+#result_container{
+    display: flex;
+    justify-content: center;
+    align-content: start;
+    gap: 2.5%;
+    flex-wrap: wrap;
+    position : absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: var(--black_box);
+    border-radius: 10px;
+    width: 75%;
+    height: 90%;
+    color: white;
+}
+
+#result_container button, #dual_container button{
+    width: 20%;
+    height: 10%;
+    font-size: 1.5em;
+    color: white;
+}
+
+#result_container button:hover, #dual_container button:hover{
+    filter: brightness(60%);
+}
+
+#result_table{
+    color: white;
+    width: 100%;
+    background-color: var(--background_color);
+    border-radius: 5px;
+    margin: 5%;
+    max-height: 50%;
+}
+
+#result_table thead{
+    font-size: 1.5em;
+    height: 10%;
+    background-color: var(--green_color);
+}
+
+#result_table tr{
+    font-size: 1.2em;
+    background-color: var(--type_field);
+    max-height: 20px;
+}
+
+#result_table tr:nth-of-type(2n+1){
+    background-color: var(--black_box);
+}
+
+#result_table td{
+    text-align: center;
+    padding: 1.5%;
+    height: 20px;
+}
+
+#dual_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5%;
+    position : absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9990;
+    background-color: var(--black_box);
+    border-radius: 10px;
+    width: 75%;
+    height: 65%;
+    color: white;
+    padding: 20px;
+}
+
+#dual_turn_status{
+    color: var(--green_color)
+}
+
+#dual_container input{
+    width: 5%;
+    font-size: 1.6em;
+}
+
+#dual_your_dices{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.eliminated{
+    color: crimson;
+}
+
+#rules{
+    display: none;
+    position : absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: var(--black_box);
+    border-radius: 10px;
+    width: 75%;
+    height: 75%;
+    color: white;
+    padding: 20px;
+    overflow-y: scroll;
+    scrollbar-color: var(--green_color);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#rules::-webkit-scrollbar{
+    background: black;
+    width: 5px;
+}
+
+#rules::-webkit-scrollbar-thumb{
+    background: #00BD6B;
+    border-radius: 5px;
+}
+
+#close_rules{
+    position: absolute;
+    top:10px;
+    right: 50px;
+    color: var(--blue_color);
+    font-size: 1.5em;
+}
+
+#close_rules:hover{
+    cursor: pointer;
+}
+
+#rules_header{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/login.css">
+
+    <title>Creation de Compte</title>
+</head>
+
+<body>
+
+    <main>
+        <div id="message"></div>
+        <a class="no_account" href="./login.html">Déjà un compte ?</a><br>
+
+        <!-- Formulaire de connexion -->
+        <div class="form-container box" id="connexionForm">
+            <form id="create_account">
+                <div id=message> </div>
+                <label for="email">Email</label>
+                <input class="textfield" type="email" id="email" name="email" required><br>
+
+                <label for="username">Username</label>
+                <input class="textfield" type="text" id="username" name="username" required><br>
+
+                <label for="password">Mot de passe</label>
+                <input class="textfield" type="password" id="password" name="password" required>
+
+                <label>Photo de profil :</label>
+                <input type="file" name="profil_picture" accept="image/*" required>
+
+                <button type="submit">Créer un compte</button>
+            </form>
+        </div>
+
+    </main>
+</body>
+
+<script src="../scripts/create_account.js"></script>
+
+</html>

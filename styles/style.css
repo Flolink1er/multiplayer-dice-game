@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'VCR OSD Mono';
+    src: url('./fonts/VCROSDMono.eot');
+    src: url('./fonts/VCROSDMono.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/VCROSDMono.woff2') format('woff2'),
+        url('./fonts/VCROSDMono.woff') format('woff'),
+        url('./fonts/VCROSDMono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./fonts/JetBrainsMono-Regular.eot');
+    src: url('./fonts/JetBrainsMono-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/JetBrainsMono-Regular.woff2') format('woff2'),
+        url('./fonts/JetBrainsMono-Regular.woff') format('woff'),
+        url('./fonts/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root{
+    --titles : 'VCR OSD Mono';
+    --text : 'JetBrains Mono';
+    --background_color : #1E1E1E;
+    --green_color : #00BD6B;
+    --blue_color: #00b7bd;
+    --greendark_color: #007c46;
+    --black_box: #000000;
+    --type_field: #888888;
+}
+
+body{
+    overflow: hidden;
+    background-color: var(--background_color);
+    font-family: var(--text);
+    width: 100vw;
+    height: 100vh;
+}
+
+.box{
+    background-color: var(--black_box);
+}
+
+.textfield{
+    background-color: var(--type_field);
+    color: black;
+}
+
+h1, h2, h3{
+    font-family: var(--titles);
+}
+
+button{
+    background-color: var(--green_color);
+    color: black;
+    border-style: none;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: var(--greendark_color);
+    cursor:pointer;
+}
+
+#navbar{
+    background-color: var(--green_color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    width: 50%;
+    height: 100%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: var(--background_color);
+}
+
+#profil_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px
+}
+
+#navppic{
+    border-radius: 5px;
+    height: 35px;
+    width: 35px;
+}
+
+#username_box{
+    color: white;
+    font-size: 1.4em;
+    padding-left: 10px;
+}
+
+#modify_profil{
+    height: 50px;
+    width: 50px;
+    color: white;
+    font-size: 1.5em;
+}
+
+#profileForm{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    background-color: var(--black_box);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 20%;
+}
+
+#background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+}
+input{
+    width : 90%;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus{
+    outline-color: var(--green_color);
+}
+
+#logout{
+    height: 45px;
+    width: 150px;
+    background-color: crimson;
+    color: white;
+    font-size: 1.2em;
+}
+
+#logout:hover{
+    background-color: rgb(150, 20, 60);
+}
+
+.title{
+    background-color: var(--green_color);
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}

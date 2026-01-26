@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Création de partie</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/create_party.css">
+    <script src="../scripts/header.js"></script>
+</head>
+
+<body>
+    <main>
+        <a href="../pages/home.html">&#8678; Retour à la page d'Acceuil</a>
+
+        <div>
+            <form id="creation_form">
+                <div id=message> </div>
+                <label for="nb_player">Entrez le nombre de joueur (min 2/ max 6)</label>
+                <input type="number" required name="nb_player" min=2 max=6 id="nb_player"><br>
+
+                <input type="submit" id="create" value="Créer">
+            </form>
+        </div>
+    </main>
+
+</body>
+
+<script src="../scripts/create_party.js"></script>
+
+</html>

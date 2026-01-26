@@ -1,0 +1,87 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+main > div{
+    width: 35%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--black_box);
+    color: white;
+}
+
+h1{
+    padding: 10px;
+    margin: 0;
+
+}
+
+table{
+    width: 100%;
+    gap: 5%;
+    padding: 15px;
+}
+
+td{
+    padding: 5px;
+}
+
+.join{
+    background-color: var(--green_color);
+    color: white;
+    border-radius: 5px;
+}
+
+.join:hover{
+    filter: brightness(60%);
+    cursor: pointer;
+}
+
+.join a:hover{
+    background-color: transparent;
+}
+
+#rank_table, #history_table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#rank_table td, #rank_table th, #history_table td, #history_table th{
+    border : 1px solid var(--green_color);
+    font-size: 1.5em ;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.ranks{
+    font-size: 2.5em !important;
+}
+
+#ranking, #history{
+    width: 45%;
+}
+
+.date_rank{
+    width: 250px;
+}
+
+#history{
+    max-height: 50vh;
+    height:fit-content;
+    overflow-y: auto;
+}
+
+#history::-webkit-scrollbar{
+    background: black;
+    width: 5px;
+}
+
+#history::-webkit-scrollbar-thumb{
+    background: #00BD6B;
+    border-radius: 5px;
+}
