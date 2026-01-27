@@ -15,17 +15,17 @@ Le projet visait à mettre en pratique :
 ## Aperçu
 
 <p align="center">
-  <img src="screenshots/home.png?v=2" alt="Page principale" width="400">
-  <img src="screenshots/lobby.png?v=2" alt="Lobby" width="400">
+  <img src="screenshots/home-v2.png" alt="Page principale" width="400">
+  <img src="screenshots/lobby-v2.png" alt="Lobby" width="400">
 </p>
 
 <p align="center">
-  <img src="screenshots/running-game1.png?v=2" alt="Jeu en cours - POV 1" width="400">
-  <img src="screenshots/running-game2.png?v=2" alt="Jeu en cours - POV 2" width="400">
+  <img src="screenshots/running-game1-v2.png" alt="Jeu en cours - POV 1" width="400">
+  <img src="screenshots/running-game2-v2.png" alt="Jeu en cours - POV 2" width="400">
 </p>
 <p align="center">
-  <img src="screenshots/running-game3.png?v=2" alt="Jeu en cours - POV 3" width="400">
-  <img src="screenshots/running-game4.png?v=2" alt="Jeu en cours - POV 4" width="400">
+  <img src="screenshots/running-game3-v2.png" alt="Jeu en cours - POV 3" width="400">
+  <img src="screenshots/running-game4-v2.png" alt="Jeu en cours - POV 4" width="400">
 </p>
 
 
