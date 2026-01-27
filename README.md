@@ -39,7 +39,7 @@ Le jeu est une adaptation du **dé menteur**, jouable de 2 à 6 joueurs.
 - La partie se termine lorsqu’il ne reste qu’un joueur
 - Des points de classement sont attribués en fin de partie
 
-Les règles en détails se trouvent [ici](RULES.md)
+Les règles en détails se trouvent [ici](RULES.md) et sont également accessibles via l'interface du jeu.
 
 ## Fonctionnalités principales
 - Création et rejoindre des parties multijoueurs
