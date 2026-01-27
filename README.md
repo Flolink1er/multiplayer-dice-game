@@ -12,6 +12,26 @@ Le projet visait à mettre en pratique :
 - la gestion d’état côté serveur
 - la conception d’une base de données relationnelle
 
+## Aperçu
+
+<p align="center">
+  <img src="screenshots/home.png" alt="Page principale" width="600">
+</p>
+
+<p align="center">
+  <img src="screenshots/lobby.png" alt="Lobby" width="600">
+</p>
+
+<p align="center">
+  <img src="screenshots/running-game1.png" alt="Jeu en cours - POV 1" width="300">
+  <img src="screenshots/running-game2.png" alt="Jeu en cours - POV 2" width="300">
+</p>
+<p align="center">
+  <img src="screenshots/running-game3.png" alt="Jeu en cours - POV 3" width="300">
+  <img src="screenshots/running-game4.png" alt="Jeu en cours - POV 4" width="300">
+</p>
+
+
 ## Fonctionnalités principales
 - Création et rejoindre des parties multijoueurs
 - Système de **lobby** avant le lancement d’une partie
