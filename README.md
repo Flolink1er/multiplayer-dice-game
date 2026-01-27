@@ -28,6 +28,18 @@ Le projet visait à mettre en pratique :
   <img src="screenshots/running-game4-v2.png" alt="Jeu en cours - POV 4" width="400">
 </p>
 
+## Règles du jeu (résumé)
+Le jeu est une adaptation du **dé menteur**, jouable de 2 à 6 joueurs.
+
+- Chaque joueur commence avec 5 dés (points de vie)
+- Les joueurs jouent à tour de rôle en faisant un pari sur les dés
+- Le joueur suivant peut surenchérir ou accuser le précédent de « menteur »
+- Le joueur perdant le duel perd un dé
+- Un joueur sans dés est éliminé
+- La partie se termine lorsqu’il ne reste qu’un joueur
+- Des points de classement sont attribués en fin de partie
+
+Les règles en détails se trouvent [ici](RULES.md)
 
 ## Fonctionnalités principales
 - Création et rejoindre des parties multijoueurs
